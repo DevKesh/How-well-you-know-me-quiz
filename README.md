@@ -2,7 +2,7 @@
 
 ## Its's basically a quiz created for understanding Javascript concepts like  : 
 
-- objects, 
+- objects 
 - functions 
 - function calls 
 - basic data structures
