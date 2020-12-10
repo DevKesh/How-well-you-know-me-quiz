@@ -2,7 +2,7 @@ var readlineSync = require("readline-sync");
 
 const chalk = require("chalk");
 
-
+var score = 0;
 
 console.log(chalk.bold.white.bgBlue("THIS IS A QUIZ TO SEE HOW WELL YOU KNOW ME!"));
 console.log(chalk.cyan.bold("**********-------*********"));
@@ -60,12 +60,12 @@ var userAnswer = readlineSync.question
 
 var userAnswer = readlineSync.question(question);
 
-var score = 0;
+
 
 if(userAnswer.toUpperCase() === answer.toUpperCase()){
 
   console.log(" You are right! ");
-  score = score + 1;
+  var newScore = score++;
 
   console.log(`You have scored ${score} points `);
  
@@ -136,7 +136,7 @@ for(i=0;i<questions.length;i++)
 }
 
  
-
+console.log(chalk.bold.green("If you beat their scores , send a screenshot to me and i'll update your score in the leaderboard!"))
 
 console.log(chalk.red.bold("HERE IS THE LEADERBOARD"))
 console.log("*----*-----*-----*")
